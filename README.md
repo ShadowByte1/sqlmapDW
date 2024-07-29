@@ -49,8 +49,8 @@ Run SQLMap with the following command:
 This command will iterate through each URL in the urls.txt file and run SQLMap on each one. Alerts will be sent to your Discord webhook for each detected vulnerability.
 
 # Reccomended Command
-./sqlmap.sh -f urls.txt --dbs --batch --level=5 --risk=3 --dump --hostname
-waybackurls domain.com | gf sqli | ./sqlmap.sh --dbs --batch --level=5 --risk=3 --dump --hostname
+./sqlmap.sh -f urls.txt --dbs --batch --level=5 --risk=3 --random-agent --dump --hostname
+waybackurls domain.com | gf sqli | ./sqlmap.sh --dbs --batch --level=5 --risk=3 --random-agent --dump --hostname
 
 # Notes
 Make sure that webhook.sh has execution permissions. You can set this with chmod +x webhook.sh.
