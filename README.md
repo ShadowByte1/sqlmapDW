@@ -50,6 +50,7 @@ This command will iterate through each URL in the urls.txt file and run SQLMap o
 
 # Reccomended Command
 ./sqlmap.sh -f urls.txt --dbs --batch --level=5 --risk=3 --random-agent --dump --hostname
+
 waybackurls domain.com | gf sqli | ./sqlmap.sh --dbs --batch --level=5 --risk=3 --random-agent --dump --hostname
 
 # Notes
